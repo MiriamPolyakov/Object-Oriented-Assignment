@@ -1,0 +1,27 @@
+﻿<Window x:Class="Object_Orientae_Assignment.Animal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Object_Orientae_Assignment"
+        mc:Ignorable="d"
+        Title="Animal" Height="450" Width="800">
+    <Grid Background="#FFE0FFF9">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="137*"/>
+            <RowDefinition Height="80*"/>
+        </Grid.RowDefinitions>
+        <Label Name="AnimalName" HorizontalAlignment="Left" Height="135" Margin="229,10,0,0" VerticalAlignment="Top" Width="305" FontSize="72"/>
+        <Button Name="GreetBtn" Content="Greet you??" HorizontalAlignment="Left" Height="39" Margin="322,98,0,0" VerticalAlignment="Top" Width="148" FontSize="20" Click="GreetBtn_Click" Grid.Row="1" Background="#FF30D2CF"/>
+        <Label Content="mammalianl" HorizontalAlignment="Left" Height="50" Margin="68,160,0,0" VerticalAlignment="Top" Width="139" FontSize="22"/>
+        <Label Content="carnivorous" HorizontalAlignment="Left" Height="50" Margin="68,211,0,0" VerticalAlignment="Top" Width="139" FontSize="22"/>
+        <Label Name="isMammal" Content="✔" HorizontalAlignment="Left" Height="50" Margin="16,160,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="-1.774,-0.811" FontSize="24"/>
+        <Label Name="isCarnivorous" Content="✔" HorizontalAlignment="Left" Height="50" Margin="16,210,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="-1.774,-0.811" FontSize="24"/>
+        <Label Name="AnimalType" HorizontalAlignment="Left" Height="42" Margin="280,104,0,0" VerticalAlignment="Top" Width="304" FontSize="18"/>
+        <Button Name="FeelComfortableBtn" Content="I feel comfortable" IsEnabled="False" HorizontalAlignment="Left" Height="39" Margin="16,37,0,0" VerticalAlignment="Top" Width="172" FontSize="20"  Grid.Row="1" Click="FeelComfortableBtn_Click" Background="#FF30D2CF"/>
+        <Button Name="GoodMoodBtn" Content="I'm in good mood" HorizontalAlignment="Left" Height="39" Margin="222,39,0,0" VerticalAlignment="Top" Width="174" FontSize="20"  Grid.Row="1" Click="GoodMoodBtn_Click" Background="#FF30D2CF"/>
+        <Button Name="FrightenedBtn" Content="I'm frightened" HorizontalAlignment="Left" Height="39" Margin="436,39,0,0" VerticalAlignment="Top" Width="148" FontSize="20"  Grid.Row="1" Click="FrightenedBtn_Click" Background="#FF30D2CF"/>
+        <Button Name="UpsetBtn" Content="I'm upset" IsEnabled="False" HorizontalAlignment="Left" Height="39" Margin="624,39,0,0" VerticalAlignment="Top" Width="148" FontSize="20"  Grid.Row="1" Click="UpsetBtn_Click" Background="#FF30D2CF"/>
+
+    </Grid>
+</Window>

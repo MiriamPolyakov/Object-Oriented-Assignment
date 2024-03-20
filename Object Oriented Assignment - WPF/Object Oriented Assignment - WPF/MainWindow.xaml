@@ -1,0 +1,28 @@
+﻿<Window x:Class="Object_Orientae_Assignment.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Object_Orientae_Assignment"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FFE0FFF9">
+        <Label Content="Dog" HorizontalAlignment="Left" Height="78" Margin="70,77,0,0" VerticalAlignment="Top" Width="176" FontSize="48"/>
+        <Label Content="cat" HorizontalAlignment="Left" Height="67" Margin="70,0,0,0" VerticalAlignment="Center" Width="189" FontSize="48"/>
+        <Label Content="Frog" HorizontalAlignment="Left" Height="84" Margin="60,294,0,0" VerticalAlignment="Top" Width="196" FontSize="48"/>
+        <Label Content="Animals" HorizontalAlignment="Left" Height="98" Margin="522,172,0,0" VerticalAlignment="Top" Width="292" RenderTransformOrigin="0.5,0.5" FontSize="72">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1.002" ScaleY="0.998"/>
+                    <SkewTransform AngleX="7.613" AngleY="0.242"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-47.53" Y="0.396"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button Name="DogBtn" Content="Watch about me 🐶" HorizontalAlignment="Left" Margin="210,98,0,0" VerticalAlignment="Top" Height="40" Width="160" Click="WatchAboutMe_Click" FontSize="16" Background="#FF30D2CF"/>
+        <Button Name="CatBtn"  Content="Watch about me 😺" HorizontalAlignment="Left" Margin="210,207,0,0" VerticalAlignment="Top" Height="40" Width="160" Click="WatchAboutMe_Click" FontSize="16" Background="#FF30D2CF"/>
+        <Button Name="FrogBtn" Content="Watch about me 🐸" HorizontalAlignment="Left" Margin="210,317,0,0" VerticalAlignment="Top" Height="40" Width="160" Click="WatchAboutMe_Click" FontSize="16" Background="#FF30D2CF"/>
+
+    </Grid>
+</Window>
